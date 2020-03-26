@@ -12,9 +12,10 @@ function succeed(item) {
 function fail(item) {
   return { ...item };
 }
-
+ 
 function repair(item) {
-  return { ...item };
+  item.durability = 100
+  return item;
 }
 
 function get(item) {
